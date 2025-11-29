@@ -36,9 +36,9 @@ COPY --from=build /app/build/libs/*.jar /app/app.jar
 EXPOSE 8081
 
 # (OPCIONAL) Variables de entorno documentadas (Render las inyecta en runtime)
-ENV SPRING_DATASOURCE_URL="jdbc:postgresql://localhost:5432/jugadores"
-ENV SPRING_DATASOURCE_USERNAME="postgres"
-ENV SPRING_DATASOURCE_PASSWORD="usuariot"
+#ENV SPRING_DATASOURCE_URL="jdbc:postgresql://localhost:5432/jugadores"
+#ENV SPRING_DATASOURCE_USERNAME="postgres"
+#ENV SPRING_DATASOURCE_PASSWORD="usuariot"
 
 # Arranque:
 # -Dserver.port=${PORT:-8080} -> usa el puerto de Render o 8080 en local
